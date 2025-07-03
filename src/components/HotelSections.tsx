@@ -80,15 +80,15 @@ const HotelSections = () => {
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-600">150+</div>
+                  <div className="text-2xl font-bold text-hotel-gold">150+</div>
                   <div className="text-sm text-gray-600">Номеров</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-600">50+</div>
+                  <div className="text-2xl font-bold text-hotel-gold">50+</div>
                   <div className="text-sm text-gray-600">Лет опыта</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-600">24/7</div>
+                  <div className="text-2xl font-bold text-hotel-gold">24/7</div>
                   <div className="text-sm text-gray-600">Сервис</div>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const HotelSections = () => {
                     alt={room.name}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 right-4 bg-hotel-gold text-white px-3 py-1 rounded-full text-sm font-medium">
                     {room.price}
                   </div>
                 </div>
@@ -169,7 +169,7 @@ const HotelSections = () => {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+                  <Button className="w-full bg-hotel-gold hover:bg-hotel-gold/90 text-white">
                     Забронировать
                   </Button>
                 </CardContent>
@@ -199,11 +199,11 @@ const HotelSections = () => {
                 className="text-center p-6 hover:shadow-lg transition-shadow duration-300"
               >
                 <CardContent className="space-y-4">
-                  <div className="mx-auto w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                  <div className="mx-auto w-16 h-16 bg-hotel-gold/10 rounded-full flex items-center justify-center">
                     <Icon
                       name={service.icon}
                       size={32}
-                      className="text-orange-600"
+                      className="text-hotel-gold"
                     />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">
@@ -234,8 +234,8 @@ const HotelSections = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="MapPin" size={20} className="text-orange-600" />
+                  <div className="w-10 h-10 bg-hotel-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="MapPin" size={20} className="text-hotel-gold" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Адрес</h4>
@@ -246,8 +246,8 @@ const HotelSections = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="Phone" size={20} className="text-orange-600" />
+                  <div className="w-10 h-10 bg-hotel-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Phone" size={20} className="text-hotel-gold" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Телефон</h4>
@@ -256,8 +256,8 @@ const HotelSections = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="Mail" size={20} className="text-orange-600" />
+                  <div className="w-10 h-10 bg-hotel-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Mail" size={20} className="text-hotel-gold" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
@@ -266,8 +266,8 @@ const HotelSections = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Icon name="Clock" size={20} className="text-orange-600" />
+                  <div className="w-10 h-10 bg-hotel-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Clock" size={20} className="text-hotel-gold" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
@@ -291,7 +291,7 @@ const HotelSections = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-hotel-gold"
                       placeholder="Ваше имя"
                     />
                   </div>
@@ -301,7 +301,7 @@ const HotelSections = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-hotel-gold"
                       placeholder="email@example.com"
                     />
                   </div>
@@ -312,11 +312,11 @@ const HotelSections = () => {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-hotel-gold"
                     placeholder="Ваше сообщение"
                   />
                 </div>
-                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+                <Button className="w-full bg-hotel-gold hover:bg-hotel-gold/90 text-white">
                   Отправить сообщение
                 </Button>
               </form>

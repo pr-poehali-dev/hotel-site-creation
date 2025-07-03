@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-hotel-green via-hotel-green/90 to-hotel-green text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-black/20"></div>
 
@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Добро пожаловать в
-                <span className="text-orange-400 block">Grand Hotel</span>
+                <span className="text-hotel-gold block">Grand Hotel</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-lg">
                 Элегантность и комфорт в самом сердце города. Незабываемый опыт
@@ -29,7 +29,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg"
+                className="bg-hotel-gold hover:bg-hotel-gold/90 text-white px-8 py-3 text-lg"
               >
                 <Icon name="Calendar" size={20} className="mr-2" />
                 Забронировать номер
@@ -53,12 +53,12 @@ const Hero = () => {
                 <Icon
                   name="MapPin"
                   size={16}
-                  className="text-orange-400 mr-1"
+                  className="text-hotel-gold mr-1"
                 />
                 <span>Центр города</span>
               </div>
               <div className="flex items-center">
-                <Icon name="Award" size={16} className="text-orange-400 mr-1" />
+                <Icon name="Award" size={16} className="text-hotel-gold mr-1" />
                 <span>Премиум класс</span>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Hero = () => {
                     />
                   </div>
 
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 text-lg">
+                  <Button className="w-full bg-hotel-gold hover:bg-hotel-gold/90 text-white py-3 text-lg">
                     <Icon name="Search" size={20} className="mr-2" />
                     Найти номера
                   </Button>

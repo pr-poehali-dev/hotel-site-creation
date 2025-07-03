@@ -29,7 +29,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-700 hover:text-hotel-gold px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -38,7 +38,7 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+            <Button className="bg-hotel-gold hover:bg-hotel-gold/90 text-white">
               Забронировать
             </Button>
           </div>
@@ -46,7 +46,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-orange-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-hotel-gold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hotel-gold"
             >
               <Icon name={isOpen ? "X" : "Menu"} size={24} />
             </button>
@@ -61,14 +61,14 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-orange-600 block px-3 py-2 text-base font-medium"
+                className="text-gray-700 hover:text-hotel-gold block px-3 py-2 text-base font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
             <div className="pt-2">
-              <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+              <Button className="w-full bg-hotel-gold hover:bg-hotel-gold/90 text-white">
                 Забронировать
               </Button>
             </div>
